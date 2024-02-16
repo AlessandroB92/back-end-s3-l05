@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="back_end_s3_l05.ShoppingCart" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- Stili aggiuntivi per la pagina del carrello -->
 </asp:Content>
@@ -9,7 +10,7 @@
         <h1>Carrello</h1>
         <asp:GridView runat="server" ID="GridViewCart" AutoGenerateColumns="False">
             <Columns>
-                <asp:BoundField DataField="Codice" HeaderText="Codice"/>
+                <asp:BoundField DataField="Codice" HeaderText="Codice" />
                 <asp:BoundField DataField="Nome" HeaderText="Nome" />
                 <asp:BoundField DataField="Prezzo" HeaderText="Prezzo" DataFormatString="{0:C}" />
                 <asp:TemplateField>
